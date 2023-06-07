@@ -24,7 +24,6 @@ void setup() {
   lcd.clear();
   Serial.begin(9600);
   finger.begin(57600);
-  finger.LEDcontrol(true);
   if (finger.verifyPassword()){
     Serial.println("Sensor biometrico encontrado!");
   }else{
